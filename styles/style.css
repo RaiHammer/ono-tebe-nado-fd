@@ -179,7 +179,7 @@
 }
 
 .lots {
-  padding: 180px 24px 120px 24px;
+  padding: 188px 24px 120px 24px;
 }
 
 .lots__heading {
@@ -197,7 +197,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .card-link {
@@ -213,7 +213,7 @@
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  gap: 30px;
+  gap: 34px;
 }
 
 .card__title {
@@ -318,7 +318,7 @@
   height: 180px;
   padding: 0 50px;
   display: grid;
-  grid-template-columns: max-content 1fr 1fr;
+  grid-template-columns: max-content 1.5fr 1fr;
   align-items: start;
   gap: 2rem;
 }

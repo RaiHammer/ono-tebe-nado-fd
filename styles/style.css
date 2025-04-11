@@ -26,7 +26,7 @@
 
   .header__link {
     text-decoration: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid currentColor;
   }
 }
 
@@ -34,10 +34,8 @@
   list-style: none;
 }
 
-.header__link_active {
-  .header__link {
-    border: 0;
-  }
+.header__links-list-item .header__link_active {
+  border: 0;
 }
 
 .header__logo {
@@ -59,23 +57,27 @@
   justify-content: flex-end;
 }
 
-.header__address-content {
+.address-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  
+}
+
+.header .address-content{
   max-width: 240px;
 }
 
-.header__address-block {
+.address-block {
   font-weight: 400;
   font-size: 18px;
   line-height: 24.3px;
   text-decoration: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid currentColor;
   width: max-content;
 }
 
-.header__address-point {
+.address .address-point {
   border-bottom: 0;
   width: 100%;
 }
@@ -101,7 +103,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 757px;
+  min-height: 757px;
 }
 .cover__title,
 .description {
@@ -169,7 +171,7 @@
   text-align: center;
   text-transform: uppercase;
   padding: 12px 32px 11px 31px;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   background: transparent;
   color: #fff;
 }
@@ -229,7 +231,6 @@
 }
 
 .card__text {
-  font-family: Raleway;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
@@ -262,7 +263,7 @@
   letter-spacing: 0;
   margin-left: 40px;
   text-decoration: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid currentColor;
 }
 
 .about {
@@ -315,33 +316,16 @@
 }
 
 .footer {
-  height: 180px;
   padding: 0 50px;
+  padding-bottom: 81px;
   display: grid;
-  grid-template-columns: max-content 1.5fr 1fr;
+  grid-template-columns: max-content 2fr 1fr;
   align-items: start;
   gap: 2rem;
 }
 
-.footer__address-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 264px;
-}
-
-.footer__address-block {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24.3px;
-  text-decoration: none;
-  border-bottom: 1px solid #000;
-  width: max-content;
-}
-
-.footer__address-point {
-  border-bottom: 0;
-  width: 100%;
+.footer .address-content{
+  max-width: 242px;
 }
 
 .footer__menu-list {
@@ -358,7 +342,7 @@
   line-height: 100%;
   letter-spacing: 0;
   text-decoration: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid currentColor;
 }
 
 .footer__menu-link_active {
